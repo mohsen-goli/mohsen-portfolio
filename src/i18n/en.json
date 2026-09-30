@@ -1,0 +1,58 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "hire": "Hire Me"
+  },
+  "hero": {
+    "greeting": "Hey, I'm Mohsen",
+    "role": "Frontend Developer",
+    "tagline": "I build modern, clean and responsive user interfaces",
+    "cta_primary": "View My Work",
+    "cta_secondary": "Download CV",
+    "scroll": "Scroll down",
+    "available": "Available for work",
+    "follow": "Find me on"
+  },
+  "about": {
+    "title": "About Me",
+    "p1": "Frontend developer focused on building modern, clean, and responsive user interfaces. I started with HTML, CSS, JavaScript, and React, and I'm currently leveling up with TypeScript and Next.js.",
+    "p2": "What drives me most is building from scratch and debugging tricky problems. Quality, commitment to deadlines, and delivering real value to clients are what matter most to me.",
+    "p3": "Looking for someone to build high-quality UI? Let's talk.",
+    "stats_projects": "Projects",
+    "stats_tech": "Technologies",
+    "stats_years": "Years Coding"
+  },
+  "tech": {
+    "title": "Tech Stack",
+    "subtitle": "Tools I work with every day"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A few projects I'm proud of",
+    "view_demo": "Live Demo",
+    "view_code": "View Code",
+    "all": "All",
+    "filter_react": "React",
+    "filter_js": "JavaScript",
+    "filter_css": "HTML/CSS"
+  },
+  "contact": {
+    "title": "Let's Talk",
+    "subtitle": "For collaboration or any question, I'd love to hear from you",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "or": "Or reach me on",
+    "name_placeholder": "What's your name?",
+    "email_placeholder": "your@email.com",
+    "message_placeholder": "Write your message..."
+  },
+  "footer": {
+    "built": "Built with",
+    "rights": "All rights reserved"
+  }
+}
