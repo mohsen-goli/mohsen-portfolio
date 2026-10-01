@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Mail, Send, MapPin, CheckCircle2 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 import SectionTitle from "../ui/SectionTitle";
 
 const contactInfo = [
@@ -22,13 +23,19 @@ const contactInfo = [
     icon: FaLinkedin,
     label: "LinkedIn",
     value: "Mohsen Golzad",
-    href: "https://linkedin.com/in/mohsen-golzad",
+    href: "https://www.linkedin.com/in/mohsen-golzad-a549519b",
   },
   {
     icon: FaTelegram,
     label: "Telegram",
     value: "@mohsen_golzad",
     href: "https://t.me/mohsen_golzad",
+  },
+  {
+    icon: FaWhatsapp,
+    label: "WhatsApp",
+    value: "+98 910 681 3841",
+    href: "https://wa.me/989106813841",
   },
 ];
 
@@ -45,7 +52,6 @@ export default function Contact() {
     e.preventDefault();
     setStatus("sending");
 
-    // فعلاً فقط شبیه‌سازی می‌کنیم — بعداً با سرویس واقعی وصل می‌کنیم
     setTimeout(() => {
       setStatus("sent");
       setFormData({ name: "", email: "", message: "" });

@@ -7,10 +7,19 @@ import profileImg from "../../assets/profile.jpg";
 export default function Hero() {
   const { t } = useTranslation();
 
+  const handleResumeDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.pdf";
+    link.download = "Mohsen_Golzad_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden"
+      className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-12"
     >
       {/* هاله‌ی بنفش پشت صفحه */}
       <div className="absolute inset-0 pointer-events-none">
@@ -18,7 +27,7 @@ export default function Hero() {
         <div className="absolute bottom-1/4 -right-40 w-96 h-96 bg-accent/15 rounded-full blur-[120px] animate-glow-pulse" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12 items-center w-full">
         {/* ستون چپ: متن */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -38,9 +47,7 @@ export default function Hero() {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500" />
             </span>
-            <span className="text-txt-muted">
-              {t("hero.available") || "Available for work"}
-            </span>
+            <span className="text-txt-muted">{t("hero.available")}</span>
           </motion.div>
 
           {/* Greeting */}
@@ -68,24 +75,22 @@ export default function Hero() {
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform rtl:rotate-180 rtl:group-hover:-translate-x-1" />
             </a>
 
-            <a
-              href="/resume.pdf"
-              download
+            <button
+              type="button"
+              onClick={handleResumeDownload}
               className="group inline-flex items-center gap-2 px-6 py-3 rounded-lg
                          border border-border hover:border-accent
-                         text-txt-primary font-medium
+                         text-txt-primary font-medium cursor-pointer
                          transition-all duration-300"
             >
               <Download className="w-4 h-4 group-hover:text-accent transition-colors" />
               {t("hero.cta_secondary")}
-            </a>
+            </button>
           </div>
 
           {/* شبکه‌های اجتماعی */}
           <div className="flex items-center gap-4 pt-4">
-            <span className="text-txt-dim text-sm">
-              {t("hero.follow") || "Find me on"}
-            </span>
+            <span className="text-txt-dim text-sm">{t("hero.follow")}</span>
             <div className="h-px flex-1 bg-border max-w-[40px]" />
             {[
               {
@@ -95,7 +100,7 @@ export default function Hero() {
               },
               {
                 icon: FaLinkedin,
-                href: "https://linkedin.com/in/mohsen-golzad",
+                href: "https://www.linkedin.com/in/mohsen-golzad-a549519b",
                 label: "LinkedIn",
               },
               {
