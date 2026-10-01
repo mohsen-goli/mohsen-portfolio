@@ -1,7 +1,8 @@
-import Navbar from "./components/layout/Navbar";
-import Hero from "./components/sections/Hero";
-import About from "./components/sections/About";
-import TechStack from "./components/sections/TechStack";
+import Navbar from './components/layout/Navbar'
+import Hero from './components/sections/Hero'
+import About from './components/sections/About'
+import TechStack from './components/sections/TechStack'
+import Projects from './components/sections/Projects'
 
 function App() {
   return (
@@ -12,13 +13,13 @@ function App() {
         <Hero />
         <About />
         <TechStack />
+        <Projects />
 
-        {/* Placeholder sections */}
-        <section id="projects" className="min-h-screen" />
+        {/* Placeholder */}
         <section id="contact" className="min-h-screen" />
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
