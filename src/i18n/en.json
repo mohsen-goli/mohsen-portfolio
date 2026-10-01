@@ -46,6 +46,7 @@
     "email": "Email",
     "message": "Message",
     "send": "Send Message",
+    "sent": "Message sent!",
     "or": "Or reach me on",
     "name_placeholder": "What's your name?",
     "email_placeholder": "your@email.com",
