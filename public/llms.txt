@@ -1,0 +1,28 @@
+# Mohsen Golzad — Frontend Developer Portfolio
+
+> Personal portfolio of Mohsen Golzad, a frontend developer based in Tehran, Iran.
+> Built with React, TypeScript, Tailwind CSS, and Framer Motion.
+
+## About
+
+Mohsen Golzad is a frontend developer focused on building modern, clean, and responsive user interfaces. Skilled in HTML, CSS, JavaScript, React, and currently expanding into TypeScript and Next.js.
+
+## Main Sections
+
+- [Home](https://mohsen-portfolio.vercel.app/#home): Introduction and role
+- [About](https://mohsen-portfolio.vercel.app/#about): Background and skills
+- [Projects](https://mohsen-portfolio.vercel.app/#projects): Portfolio of real-world projects
+- [Contact](https://mohsen-portfolio.vercel.app/#contact): Ways to get in touch
+
+## Contact
+
+- Email: mohsen.golzad9069@gmail.com
+- GitHub: https://github.com/mohsen-goli
+- LinkedIn: https://www.linkedin.com/in/mohsen-golzad-a549519b
+- Telegram: https://t.me/mohsen_golzad
+- WhatsApp: https://wa.me/989106813841
+
+## Languages
+
+- Persian (fa)
+- English (en)
