@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import { Mail, Send, MapPin, CheckCircle2, AlertCircle } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa6";
 import SectionTitle from "../ui/SectionTitle";
 
 // ⚠️ اینجا Form ID خودت رو بذار
@@ -33,8 +34,13 @@ const contactInfo = [
     value: "@mohsen_golzad",
     href: "https://t.me/mohsen_golzad",
   },
+  {
+    icon: FaWhatsapp,
+    label: "WhatsApp",
+    value: "+98 910 681 3841",
+    href: "https://wa.me/989106813841",
+  },
 ];
-
 export default function Contact() {
   const { t } = useTranslation();
   const [formData, setFormData] = useState({
