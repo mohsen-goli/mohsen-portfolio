@@ -9,10 +9,10 @@ Mohsen Golzad is a frontend developer focused on building modern, clean, and res
 
 ## Main Sections
 
-- [Home](https://mohsen-portfolio.vercel.app/#home): Introduction and role
-- [About](https://mohsen-portfolio.vercel.app/#about): Background and skills
-- [Projects](https://mohsen-portfolio.vercel.app/#projects): Portfolio of real-world projects
-- [Contact](https://mohsen-portfolio.vercel.app/#contact): Ways to get in touch
+- [Home](https://mohsen-portfolio-gold.vercel.app/#home): Introduction and role
+- [About](https://mohsen-portfolio-gold.vercel.app/#about): Background and skills
+- [Projects](https://mohsen-portfolio-gold.vercel.app/#projects): Portfolio of real-world projects
+- [Contact](https://mohsen-portfolio-gold.vercel.app/#contact): Ways to get in touch
 
 ## Contact
 

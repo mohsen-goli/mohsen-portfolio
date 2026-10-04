@@ -2,7 +2,7 @@
 
 A modern, bilingual (Persian / English) portfolio website built with React, TypeScript, Tailwind CSS and Framer Motion.
 
-🔗 **Live Demo:** [mohsen-portfolio.vercel.app](https://mohsen-portfolio.vercel.app/)
+🔗 **Live Demo:** [mohsen-portfolio-gold.vercel.app](https://mohsen-portfolio-gold.vercel.app/)
 
 ---
 
@@ -21,16 +21,16 @@ A modern, bilingual (Persian / English) portfolio website built with React, Type
 
 ## 🛠 Tech Stack
 
-| Category | Technology |
-|----------|------------|
-| Framework | React 19 + Vite |
-| Language | TypeScript |
-| Styling | Tailwind CSS 3 |
-| Animation | Framer Motion |
-| i18n | i18next + react-i18next |
-| Icons | Lucide React + React Icons |
-| Form | Formspree |
-| Deployment | Vercel |
+| Category   | Technology                 |
+| ---------- | -------------------------- |
+| Framework  | React 19 + Vite            |
+| Language   | TypeScript                 |
+| Styling    | Tailwind CSS 3             |
+| Animation  | Framer Motion              |
+| i18n       | i18next + react-i18next    |
+| Icons      | Lucide React + React Icons |
+| Form       | Formspree                  |
+| Deployment | Vercel                     |
 
 ---
 
@@ -48,3 +48,4 @@ npm install
 
 # Start the development server
 npm run dev
+```
