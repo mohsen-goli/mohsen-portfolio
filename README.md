@@ -1,75 +1,50 @@
-# React + TypeScript + Vite
+# Mohsen Golzad — Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, bilingual (Persian / English) portfolio website built with React, TypeScript, Tailwind CSS and Framer Motion.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [mohsen-portfolio.vercel.app](https://mohsen-portfolio.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 🌐 **Bilingual** — Full Persian (RTL) & English (LTR) support with i18next
+- 🎨 **Modern dark UI** — Custom violet/dark theme built with Tailwind CSS
+- ⚡ **Smooth animations** — Framer Motion transitions and interactions
+- 📱 **Fully responsive** — Mobile-first design that works on all devices
+- 🎯 **Project filtering** — Interactive category filter for portfolio projects
+- 📬 **Working contact form** — Powered by Formspree
+- 📄 **Downloadable resume** — One-click PDF download
+- 🔍 **SEO optimized** — Meta tags, Open Graph, and semantic HTML
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠 Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Category | Technology |
+|----------|------------|
+| Framework | React 19 + Vite |
+| Language | TypeScript |
+| Styling | Tailwind CSS 3 |
+| Animation | Framer Motion |
+| i18n | i18next + react-i18next |
+| Icons | Lucide React + React Icons |
+| Form | Formspree |
+| Deployment | Vercel |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Run Locally
 
-```
+```bash
+# Clone the repository
+git clone https://github.com/mohsen-goli/mohsen-portfolio.git
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+# Navigate into the project
+cd mohsen-portfolio
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# Install dependencies
+npm install
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+# Start the development server
+npm run dev
