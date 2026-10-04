@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-import { Mail, Send, MapPin, CheckCircle2 } from "lucide-react";
+import { Mail, Send, MapPin, CheckCircle2, AlertCircle } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTelegram } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa6";
 import SectionTitle from "../ui/SectionTitle";
+
+// ⚠️ اینجا Form ID خودت رو بذار
+const FORMSPREE_ID = "mqpezewo";
 
 const contactInfo = [
   {
@@ -31,12 +33,6 @@ const contactInfo = [
     value: "@mohsen_golzad",
     href: "https://t.me/mohsen_golzad",
   },
-  {
-    icon: FaWhatsapp,
-    label: "WhatsApp",
-    value: "+98 910 681 3841",
-    href: "https://wa.me/989106813841",
-  },
 ];
 
 export default function Contact() {
@@ -46,17 +42,36 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">(
+    "idle",
+  );
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus("sending");
 
-    setTimeout(() => {
-      setStatus("sent");
-      setFormData({ name: "", email: "", message: "" });
-      setTimeout(() => setStatus("idle"), 3000);
-    }, 1200);
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (res.ok) {
+        setStatus("sent");
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setStatus("idle"), 4000);
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 4000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
   };
 
   const handleChange = (
@@ -74,15 +89,13 @@ export default function Contact() {
         />
 
         <div className="grid md:grid-cols-5 gap-8">
-          {/* Form */}
           <motion.form
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             onSubmit={handleSubmit}
-            className="md:col-span-3 p-6 md:p-8 rounded-2xl bg-bg-soft border border-border
-                       space-y-5"
+            className="md:col-span-3 p-6 md:p-8 rounded-2xl bg-bg-soft border border-border space-y-5"
           >
             <div className="grid sm:grid-cols-2 gap-5">
               <div className="space-y-2">
@@ -154,7 +167,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              disabled={status !== "idle"}
+              disabled={status === "sending" || status === "sent"}
               className="group inline-flex items-center justify-center gap-2 w-full sm:w-auto
                          px-6 py-3 rounded-lg bg-accent hover:bg-accent-hover
                          text-white font-medium transition-all duration-300
@@ -174,10 +187,15 @@ export default function Contact() {
                   {t("contact.sent")}
                 </>
               )}
+              {status === "error" && (
+                <>
+                  <AlertCircle className="w-4 h-4" />
+                  {t("contact.error")}
+                </>
+              )}
             </button>
           </motion.form>
 
-          {/* Info */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -204,8 +222,7 @@ export default function Contact() {
                         ? undefined
                         : "noopener noreferrer"
                     }
-                    className="group flex items-center gap-3 p-3 rounded-lg
-                               hover:bg-bg transition-colors"
+                    className="group flex items-center gap-3 p-3 rounded-lg hover:bg-bg transition-colors"
                   >
                     <div
                       className="flex items-center justify-center w-10 h-10 rounded-lg
