@@ -23,7 +23,12 @@
     "p3": "Looking for someone to build high-quality UI? Let's talk.",
     "stats_projects": "Projects",
     "stats_tech": "Technologies",
-    "stats_years": "Years Coding"
+    "stats_years": "Years Coding",
+    "view_projects": "View Projects",
+    "contact_me": "Contact Me",
+    "values_clean_code": "Code any developer can read",
+    "values_performance": "Speed and constant optimization",
+    "values_detail": "Obsessed with details and UX"
   },
   "tech": {
     "title": "Tech Stack",

@@ -14,22 +14,18 @@ export default function About() {
   ];
 
   const values = [
-    {
-      icon: Code2,
-      title: "Clean Code",
-      desc: "کدی که هر توسعه‌دهنده‌ای بتونه بخونه",
-    },
-    { icon: Zap, title: "Performance", desc: "سرعت بالا و بهینه‌سازی همیشگی" },
-    { icon: Heart, title: "Detail", desc: "وسواس روی جزئیات و UX" },
+    { icon: Code2, title: "Clean Code", desc: t("about.values_clean_code") },
+    { icon: Zap, title: "Performance", desc: t("about.values_performance") },
+    { icon: Heart, title: "Detail", desc: t("about.values_detail") },
   ];
 
   return (
     <section id="about" className="relative py-24 md:py-32">
       <div className="max-w-6xl mx-auto px-6">
-        <SectionTitle title={t("about.title")} subtitle={t("about.p3")} />
+        <SectionTitle title={t("about.title")} />
 
         <div className="grid md:grid-cols-5 gap-12 items-center">
-          {/* عکس — 2 ستون */}
+          {/* عکس */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -37,11 +33,9 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="md:col-span-2 relative"
           >
-            <div className="relative max-w-xs mx-auto md:mx-0">
-              {/* فریم تزئینی */}
+            <div className="relative max-w-[240px] mx-auto md:mx-0">
               <div className="absolute -inset-3 border border-accent/30 rounded-2xl" />
               <div className="absolute -inset-3 border border-accent/10 rounded-2xl rotate-3" />
-
               <img
                 src={profileImg}
                 alt="Mohsen Golzad"
@@ -50,7 +44,7 @@ export default function About() {
             </div>
           </motion.div>
 
-          {/* متن — 3 ستون */}
+          {/* متن */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -62,14 +56,17 @@ export default function About() {
               {t("about.p1")}
             </p>
             <p className="text-txt-muted leading-relaxed">{t("about.p2")}</p>
-            <p className="text-txt-muted text-sm">
-              →{" "}
+            <p className="text-txt-muted leading-relaxed">{t("about.p3")}</p>
+
+            {/* لینک‌های داخلی */}
+            <p className="text-sm">
+              <span className="text-txt-dim">→ </span>
               <a href="#projects" className="text-accent hover:underline">
-                مشاهده نمونه‌کارها
+                {t("about.view_projects")}
               </a>
-              {" · "}
+              <span className="text-txt-dim"> · </span>
               <a href="#contact" className="text-accent hover:underline">
-                تماس با من
+                {t("about.contact_me")}
               </a>
             </p>
 
