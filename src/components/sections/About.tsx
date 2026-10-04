@@ -62,6 +62,16 @@ export default function About() {
               {t("about.p1")}
             </p>
             <p className="text-txt-muted leading-relaxed">{t("about.p2")}</p>
+            <p className="text-txt-muted text-sm">
+              →{" "}
+              <a href="#projects" className="text-accent hover:underline">
+                مشاهده نمونه‌کارها
+              </a>
+              {" · "}
+              <a href="#contact" className="text-accent hover:underline">
+                تماس با من
+              </a>
+            </p>
 
             {/* ارزش‌ها */}
             <div className="grid grid-cols-3 gap-4 pt-4">
