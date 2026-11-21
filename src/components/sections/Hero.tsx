@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden pt-24 pb-12"
+      className="relative min-h-[88vh] flex items-center overflow-hidden pt-20 pb-8"
     >
       {/* هاله‌ی بنفش پشت صفحه */}
       <div className="absolute inset-0 pointer-events-none">
@@ -27,7 +27,7 @@ export default function Hero() {
         <div className="absolute bottom-1/4 -right-40 w-96 h-96 bg-accent/15 rounded-full blur-[120px] animate-glow-pulse" />
       </div>
 
-      <div className="relative max-w-6xl mx-auto px-6 py-12 grid lg:grid-cols-2 gap-12 items-center w-full">
+      <div className="relative max-w-6xl mx-auto px-6 py-6 grid lg:grid-cols-2 gap-10 items-center w-full">
         {/* ستون چپ: متن */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
