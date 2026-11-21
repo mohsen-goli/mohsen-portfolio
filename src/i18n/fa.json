@@ -42,6 +42,8 @@
     "admin_demo": "پنل مدیریت",
     "admin_code": "کد پنل مدیریت",
     "store_code": "کد فروشگاه",
+    "store_preview": "فروشگاه",
+    "admin_preview": "پنل مدیریت",
     "all": "همه",
     "filter_react": "ریکت",
     "filter_js": "جاوااسکریپت",
