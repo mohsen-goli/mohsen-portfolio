@@ -95,7 +95,7 @@ export default function ProjectCard({ project, index }: Props) {
                        transition-colors"
           >
             <ExternalLink className="w-4 h-4" />
-            {t("projects.view_demo")}
+            {t(project.adminDemo ? "projects.store_demo" : "projects.view_demo")}
           </a>
           {project.adminDemo && (
             <a
