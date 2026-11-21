@@ -4,6 +4,7 @@ import novatech from "../assets/projects/novatech.jpg";
 import todoReact from "../assets/projects/todo-react.jpg";
 import weather from "../assets/projects/weather.jpg";
 import rosaStoreV2 from "../assets/projects/rosa-store.jpg";
+import rosaAdminV2 from "../assets/projects/rosa-admin.jpg";
 
 export type ProjectCategory = "react" | "js" | "css";
 
@@ -18,6 +19,7 @@ export interface Project {
   tech: string[];
   demo: string;
   github: string;
+  adminImage?: string;
   adminDemo?: string;
   adminGithub?: string;
   category: ProjectCategory;
@@ -33,6 +35,7 @@ export const projects: Project[] = [
       en: "A modern beauty e-commerce experience built with React, TypeScript, and Supabase, featuring product discovery, cart, wishlist, customer accounts, and an order flow.",
     },
     image: rosaStoreV2,
+    adminImage: rosaAdminV2,
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion"],
     demo: "https://rosa-store-v2.vercel.app/",
     github: "https://github.com/mohsen-goli/rosa-store-v2",
