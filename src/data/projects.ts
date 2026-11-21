@@ -18,6 +18,8 @@ export interface Project {
   tech: string[];
   demo: string;
   github: string;
+  adminDemo?: string;
+  adminGithub?: string;
   category: ProjectCategory;
   featured?: boolean;
 }
@@ -34,6 +36,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion"],
     demo: "https://rosa-store-v2.vercel.app/",
     github: "https://github.com/mohsen-goli/rosa-store-v2",
+    adminGithub: "https://github.com/mohsen-goli/rosa-admin",
     category: "react",
     featured: true,
   },
