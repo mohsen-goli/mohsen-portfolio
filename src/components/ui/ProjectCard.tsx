@@ -36,17 +36,30 @@ export default function ProjectCard({ project, index }: Props) {
         </div>
       )}
 
-      {/* Image */}
-      <div className="relative aspect-video overflow-hidden bg-bg-soft">
-        <img
-          src={project.image}
-          alt={project.title}
-          className="w-full h-full object-cover object-top
-                     group-hover:scale-105 transition-transform duration-700"
-          loading="lazy"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-transparent to-transparent opacity-60" />
-      </div>
+      {/* Project previews */}
+      {project.adminImage ? (
+        <div className="grid grid-cols-2 gap-1 overflow-hidden bg-bg-soft">
+          <div className="relative aspect-video overflow-hidden">
+            <img src={project.image} alt={`${project.title} — store`} className="w-full h-full object-cover object-top" loading="lazy" />
+            <span className="absolute bottom-2 start-2 rounded bg-black/70 px-2 py-1 text-[10px] text-white">{t("projects.store_preview")}</span>
+          </div>
+          <div className="relative aspect-video overflow-hidden">
+            <img src={project.adminImage} alt={`${project.title} — admin dashboard`} className="w-full h-full object-cover object-top" loading="lazy" />
+            <span className="absolute bottom-2 start-2 rounded bg-black/70 px-2 py-1 text-[10px] text-white">{t("projects.admin_preview")}</span>
+          </div>
+        </div>
+      ) : (
+        <div className="relative aspect-video overflow-hidden bg-bg-soft">
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-full h-full object-cover object-top
+                       group-hover:scale-105 transition-transform duration-700"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-bg-card via-transparent to-transparent opacity-60" />
+        </div>
+      )}
 
       {/* Content */}
       <div className="flex flex-col flex-1 p-6">
