@@ -29,7 +29,7 @@ export default function TechStack() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative py-24 md:py-32">
+    <section className="relative py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-6">
         <SectionTitle title={t("tech.title")} subtitle={t("tech.subtitle")} />
 
