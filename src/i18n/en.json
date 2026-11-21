@@ -42,6 +42,8 @@
     "admin_demo": "Admin Panel",
     "admin_code": "Admin Dashboard Code",
     "store_code": "Store Code",
+    "store_preview": "Storefront",
+    "admin_preview": "Admin Panel",
     "all": "All",
     "filter_react": "React",
     "filter_js": "JavaScript",
