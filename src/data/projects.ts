@@ -39,6 +39,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion"],
     demo: "https://rosa-store-v2.vercel.app/",
     github: "https://github.com/mohsen-goli/rosa-store-v2",
+    adminDemo: "https://rosa-admin.vercel.app/",
     adminGithub: "https://github.com/mohsen-goli/rosa-admin",
     category: "react",
     featured: true,
