@@ -22,7 +22,7 @@ export default function Projects() {
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section id="projects" className="relative py-24 md:py-32">
+    <section id="projects" className="relative py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-6">
         <SectionTitle
           title={t("projects.title")}
@@ -34,7 +34,7 @@ export default function Projects() {
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-wrap items-center justify-center gap-2 mb-10"
+          className="flex flex-wrap items-center justify-center gap-2 mb-8"
         >
           {filters.map(({ key, label }) => (
             <button

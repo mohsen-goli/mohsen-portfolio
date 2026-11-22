@@ -3,8 +3,8 @@ import novaadmin from "../assets/projects/novaadmin.jpg";
 import novatech from "../assets/projects/novatech.jpg";
 import todoReact from "../assets/projects/todo-react.jpg";
 import weather from "../assets/projects/weather.jpg";
-import rosaStore from "../assets/projects/rosa-store.jpg";
-import rosaAdmin from "../assets/projects/rosa-admin.jpg";
+import rosaStoreV2 from "../assets/projects/rosa-store.jpg";
+import rosaAdminV2 from "../assets/projects/rosa-admin.jpg";
 
 export type ProjectCategory = "react" | "js" | "css";
 
@@ -19,36 +19,28 @@ export interface Project {
   tech: string[];
   demo: string;
   github: string;
+  adminImage?: string;
+  adminDemo?: string;
+  adminGithub?: string;
   category: ProjectCategory;
   featured?: boolean;
 }
 
 export const projects: Project[] = [
   {
-    id: "rosa-store",
-    title: "ROSA Beauty Store",
+    id: "rosa-store-v2",
+    title: "ROSA Beauty Store V2",
     description: {
-      fa: "فروشگاه آنلاین محصولات زیبایی با React و TypeScript، شامل نمایش محصولات و تجربه خرید مدرن.",
-      en: "A modern beauty e-commerce store built with React and TypeScript, featuring product browsing and a shopping experience.",
+      fa: "فروشگاه آنلاین محصولات زیبایی با React، TypeScript و Supabase؛ شامل جست‌وجو و فیلتر محصولات، سبد خرید، علاقه‌مندی‌ها، حساب کاربری و فرایند ثبت سفارش.",
+      en: "A modern beauty e-commerce experience built with React, TypeScript, and Supabase, featuring product discovery, cart, wishlist, customer accounts, and an order flow.",
     },
-    image: rosaStore,
-    tech: ["React", "TypeScript", "Vite"],
-    demo: "https://rosa-beauty-store.vercel.app/",
-    github: "https://github.com/mohsen-goli/rosa-beauty-store",
-    category: "react",
-    featured: true,
-  },
-  {
-    id: "rosa-admin",
-    title: "ROSA Admin",
-    description: {
-      fa: "داشبورد مدیریتی پروژه ROSA برای مشاهده و مدیریت اطلاعات فروشگاه.",
-      en: "An admin dashboard for viewing and managing ROSA store information.",
-    },
-    image: rosaAdmin,
-    tech: ["React", "TypeScript"],
-    demo: "https://rosa-admin.vercel.app/",
-    github: "https://github.com/mohsen-goli/rosa-admin",
+    image: rosaStoreV2,
+    adminImage: rosaAdminV2,
+    tech: ["React", "TypeScript", "Supabase", "Tailwind CSS", "Framer Motion"],
+    demo: "https://rosa-store-v2.vercel.app/",
+    github: "https://github.com/mohsen-goli/rosa-store-v2",
+    adminDemo: "https://rosa-admin.vercel.app/",
+    adminGithub: "https://github.com/mohsen-goli/rosa-admin",
     category: "react",
     featured: true,
   },

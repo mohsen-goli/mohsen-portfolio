@@ -20,7 +20,7 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="relative py-24 md:py-32">
+    <section id="about" className="relative py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-6">
         <SectionTitle title={t("about.title")} />
 
@@ -93,7 +93,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="grid grid-cols-3 gap-4 mt-16 max-w-2xl mx-auto"
+          className="grid grid-cols-3 gap-4 mt-12 max-w-2xl mx-auto"
         >
           {stats.map(({ value, label }) => (
             <div
