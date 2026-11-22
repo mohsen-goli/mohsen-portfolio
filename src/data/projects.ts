@@ -53,7 +53,7 @@ export const projects: Project[] = [
     },
     image: neginbox,
     tech: ["HTML", "CSS", "JavaScript"],
-    demo: "https://neginbox.vercel.app/",
+    demo: "https://neginbox.shop/",
     github: "https://github.com/mohsen-goli/neginbox-landing",
     category: "css",
     featured: true,
@@ -110,6 +110,6 @@ export const projects: Project[] = [
     tech: ["JavaScript", "REST API", "CSS"],
     demo: "https://weather-app-chi-woad-77.vercel.app/",
     github: "https://github.com/mohsen-goli/weather-app",
-    category: "css",
+    category: "js",
   },
 ];

@@ -26,7 +26,7 @@ const contactInfo = [
     icon: FaLinkedin,
     label: "LinkedIn",
     value: "Mohsen Golzad",
-    href: "https://www.linkedin.com/in/mohsen-golzad-a549519b",
+    href: "https://www.linkedin.com/in/mohsen-golzad-a5495319b",
   },
   {
     icon: FaTelegram,
@@ -101,6 +101,7 @@ export default function Contact() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
             onSubmit={handleSubmit}
+            aria-label={t("contact.title")}
             className="md:col-span-3 p-6 md:p-8 rounded-2xl bg-bg-soft border border-border space-y-5"
           >
             <div className="grid sm:grid-cols-2 gap-5">
@@ -186,7 +187,7 @@ export default function Contact() {
                   {t("contact.send")}
                 </>
               )}
-              {status === "sending" && "Sending..."}
+              {status === "sending" && t("contact.sending")}
               {status === "sent" && (
                 <>
                   <CheckCircle2 className="w-4 h-4" />

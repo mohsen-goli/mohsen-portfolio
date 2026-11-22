@@ -9,7 +9,7 @@
   "hero": {
     "greeting": "Hey, I'm Mohsen",
     "role": "Frontend Developer",
-    "tagline": "I build modern, clean and responsive user interfaces",
+    "tagline": "I build responsive React and TypeScript apps, e-commerce stores, and admin dashboards.",
     "cta_primary": "View My Work",
     "cta_secondary": "Download CV",
     "scroll": "Scroll down",
@@ -18,8 +18,8 @@
   },
   "about": {
     "title": "About Me",
-    "p1": "Frontend developer focused on building modern, clean, and responsive user interfaces. I started with HTML, CSS, JavaScript, and React, and I'm currently leveling up with TypeScript and Next.js.",
-    "p2": "What drives me most is building from scratch and debugging tricky problems. Quality, commitment to deadlines, and delivering real value to clients are what matter most to me.",
+    "p1": "I'm a frontend developer focused on building practical, responsive web applications. I work with React, TypeScript, JavaScript, and Tailwind CSS, and I have built full e-commerce and admin dashboard experiences connected to Supabase.",
+    "p2": "I enjoy turning ideas into working products, solving interface problems, and improving the details that make an experience easier to use. I value clear communication, reliable delivery, and code that is easy to maintain.",
     "p3": "Looking for someone to build high-quality UI? Let's talk.",
     "stats_projects": "Projects",
     "stats_tech": "Technologies",
@@ -28,11 +28,14 @@
     "contact_me": "Contact Me",
     "values_clean_code": "Code any developer can read",
     "values_performance": "Speed and constant optimization",
-    "values_detail": "Obsessed with details and UX"
+    "values_detail": "Obsessed with details and UX",
+    "values_clean_title": "Clean Code",
+    "values_performance_title": "Performance",
+    "values_detail_title": "User Experience"
   },
   "tech": {
     "title": "Tech Stack",
-    "subtitle": "Tools I work with every day"
+    "subtitle": "Technologies used across my projects"
   },
   "projects": {
     "title": "Projects",
@@ -48,7 +51,8 @@
     "all": "All",
     "filter_react": "React",
     "filter_js": "JavaScript",
-    "filter_css": "HTML/CSS"
+    "filter_css": "HTML/CSS",
+    "featured": "Featured"
   },
   "contact": {
     "title": "Let's Talk",
@@ -62,7 +66,8 @@
     "or": "Or reach me on",
     "name_placeholder": "What's your name?",
     "email_placeholder": "your@email.com",
-    "message_placeholder": "Write your message..."
+    "message_placeholder": "Write your message...",
+    "sending": "Sending..."
   },
   "footer": {
     "built": "Built with",

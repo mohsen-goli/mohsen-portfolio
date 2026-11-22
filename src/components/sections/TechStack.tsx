@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import SectionTitle from "../ui/SectionTitle";
+import { Database, Network } from "lucide-react";
 import {
   SiReact,
   SiJavascript,
@@ -23,6 +24,8 @@ const technologies = [
   { name: "Git", icon: SiGit, color: "#F05032" },
   { name: "GitHub", icon: SiGithub, color: "#FFFFFF" },
   { name: "Vite", icon: SiVite, color: "#646CFF" },
+  { name: "Supabase", icon: Database, color: "#3ECF8E" },
+  { name: "REST API", icon: Network, color: "#A78BFA" },
 ];
 
 export default function TechStack() {
@@ -33,7 +36,7 @@ export default function TechStack() {
       <div className="max-w-6xl mx-auto px-6">
         <SectionTitle title={t("tech.title")} subtitle={t("tech.subtitle")} />
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-9 gap-4">
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-4">
           {technologies.map(({ name, icon: Icon, color }, index) => (
             <motion.div
               key={name}

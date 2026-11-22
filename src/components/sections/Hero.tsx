@@ -100,7 +100,7 @@ export default function Hero() {
               },
               {
                 icon: FaLinkedin,
-                href: "https://www.linkedin.com/in/mohsen-golzad-a549519b",
+                href: "https://www.linkedin.com/in/mohsen-golzad-a5495319b",
                 label: "LinkedIn",
               },
               {

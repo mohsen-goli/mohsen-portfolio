@@ -6,7 +6,7 @@ const socials = [
   { icon: FaGithub, href: "https://github.com/mohsen-goli", label: "GitHub" },
   {
     icon: FaLinkedin,
-    href: "https://linkedin.com/in/mohsen-golzad",
+    href: "https://www.linkedin.com/in/mohsen-golzad-a5495319b",
     label: "LinkedIn",
   },
   { icon: FaTelegram, href: "https://t.me/mohsen_golzad", label: "Telegram" },

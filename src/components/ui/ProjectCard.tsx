@@ -32,7 +32,7 @@ export default function ProjectCard({ project, index }: Props) {
                         bg-accent/90 backdrop-blur-sm text-white text-xs font-medium"
         >
           <Star className="w-3 h-3 fill-current" />
-          Featured
+          {t("projects.featured")}
         </div>
       )}
 

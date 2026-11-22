@@ -8,15 +8,15 @@ export default function About() {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "7+", label: t("about.stats_projects") },
-    { value: "8+", label: t("about.stats_tech") },
+    { value: "7", label: t("about.stats_projects") },
+    { value: "11+", label: t("about.stats_tech") },
     { value: "1+", label: t("about.stats_years") },
   ];
 
   const values = [
-    { icon: Code2, title: "Clean Code", desc: t("about.values_clean_code") },
-    { icon: Zap, title: "Performance", desc: t("about.values_performance") },
-    { icon: Heart, title: "Detail", desc: t("about.values_detail") },
+    { icon: Code2, title: t("about.values_clean_title"), desc: t("about.values_clean_code") },
+    { icon: Zap, title: t("about.values_performance_title"), desc: t("about.values_performance") },
+    { icon: Heart, title: t("about.values_detail_title"), desc: t("about.values_detail") },
   ];
 
   return (
